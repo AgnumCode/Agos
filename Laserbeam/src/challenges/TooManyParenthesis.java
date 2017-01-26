@@ -1,4 +1,3 @@
-package challenges;
 
 //Author: Eric Agocs
 //Purpose: program challenge
