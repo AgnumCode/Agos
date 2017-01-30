@@ -1,3 +1,3 @@
 # Agos
 
-Personal Repository for personal use.
+Personal repository of projects.
