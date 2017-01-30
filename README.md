@@ -1,3 +1,3 @@
 # Agos
 
-11100100010
+Personal Repository for personal use.
