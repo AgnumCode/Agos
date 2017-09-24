@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eric A.</title>
+
+	<script src="js/angular.js"></script>
+	<script src="js/custom.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+	
+  </head>
+  <body ng-controller="myCtrl">
+
+	<!-- Nav Bar -->
+		<div class="navbar navbar-custom navbar-fixed-top">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="glyphicon glyphicon-triangle-bottom"></span>
+		  </button>
+		  <h3 class="title-padding"> Eric A.</h3>
+		</div>
+		<div class="collapse navbar-collapse">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#home" data-target="#bs-carousel" data-slide-to="0">Home</a></li>
+			<li class="active"><a href="pages/skills.html">Skills</a></li>
+			<li class="active"><a href="pages/projects.html">Projects</a></li>
+			<li class="active"><a href="https://github.com/AgnumCode/Agos">Github</a></li>
+			<li class="active"><a href="pages/Eric-Agocs-resume.docx" download>Download Resume (.docx file)</a></li>
+			
+		  </ul>
+		</div><!--/.nav-collapse -->
+	  </div>
+	</div>
+	
+	<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="5000" id="bs-carousel">
+
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#bs-carousel" data-slide-to="1"></li>
+			<li data-target="#bs-carousel" data-slide-to="2"></li>
+		  </ol>
+		  
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+			<div class="item slides active">
+			<!-- Overlay -->
+			  <div class="slide-1"></div>
+			  <div class="hero">
+			  <hgroup>
+				<div ng-style="style1">Hello, <br> I am Eric A.</div>     
+			  <hgroup>
+			  </div>
+			</div>
+			<div class="item slides">
+			  <div class="slide-2"></div>
+			  <div class="hero">  
+				<hgroup>
+				<div ng-style="style2">Website made with Bootstrap & AngularJS.</div>     
+			    <hgroup>			  
+			  </div>
+			</div>
+			<div class="item slides">
+			  <div class="slide-3"></div>
+			  <div class="hero">       
+				<hgroup>
+				<div ng-style="style3">As well as some JQuery.</div>
+				</hgroup>
+			  </div>
+			</div>
+		  </div> 
+		</div>
+    <div class="container-fluid">
+	
+    <!-- Description Text -->
+	
+	<div class="container"> 
+	  <div style="padding-top: 0.8px" class="row">
+		<div></div>
+	  </div>
+	</div>
+	
+	<!-- Labels -->
+
+</div>
+
+   <div class="container addressdiv col-md-12">
+   <address class="address-pad">
+   	  <p class="author"> <small>Website by — <em>Eric A.</em></small></p>
+   </address>
+   </div>
+  </body>
+</html>
