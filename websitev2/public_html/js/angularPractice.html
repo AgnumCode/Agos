@@ -1,0 +1,82 @@
+<!doctype html>
+
+<!-- Author: Eric Agocs 
+	 Purpose: Practice 
+	 Description: Familiarize self with AngularJS using various functionality provided
+	              by the framework. -->
+
+<html>
+   
+   <head>
+   
+   <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+   <script>
+	  
+         angular.module("App", []).controller("AlphaController", function($scope) {	
+
+			<!-- Initialize Fibonacci entry to "" -->
+			$scope.entry = "";
+			<!-- Initialize Fibonacci ng-show for 'Fibonacci Value' to 'hide:true' -->
+			$scope.hiddenFB = true;
+			<!-- Initialize rgb values -->
+			$scope.colorRed = 50;
+			$scope.colorGreen = 50;
+			$scope.colorBlue = 50;
+			
+			<!-- Fibonacci sequence function -->
+			$scope.Fibonacci = function(fn) { 
+			
+			<!-- If the number is less than or equal to two, the Fibonacci sequence is always 1 -->
+			if (fn <= 2) {
+			
+			return 1;
+			
+			}
+			
+			else { 
+				<!-- Initialize Fibonacci ng-show for 'Fibonacci Value' to 'hide:false' -->
+				$scope.hiddenFB = false;
+				<!-- Recursive function to calculate the Fibonacci sequence -->
+				return this.Fibonacci(fn - 1) + this.Fibonacci(fn - 2);
+			}
+			
+			}
+			
+			
+			$scope.colorFunction = function() {
+																													
+			return $scope.colorStyle = {'background-color': 'rgb(' + $scope.colorRed  + ',' 
+																   + $scope.colorBlue  + ',' 
+																   + $scope.colorGreen + ')'};
+			}
+		   
+         });
+      </script>
+      </head>
+   
+   <body ng-app = "App">  
+      <input type="checkbox" id="ck1" ng-model="alphaModel"/> Fibonacci Calculator 
+      <div ng-show="alphaModel" ng-controller="AlphaController">
+         <h2>Fibonacci Number: {{entry}} </h2>
+		 <h2>Fibonacci Value: <span ng-hide="hiddenFB">{{Fibonacci(entry) | number }}</span> </h2>
+		 <p>Enter Number: &nbsp <input type="text" ng-model="entry"/></p>
+      </div>
+	  
+	  <br/><input type="checkbox" id="ck2" ng-model="colorModel"/> Color Calculator
+	  <div ng-show="colorModel" ng-controller="AlphaController"> 		
+		<table>
+		<tr>
+		<th>Red</th>
+		<th>Blue</th>
+		<th>Green</th>
+		</tr>
+		<tr>
+		<td><input type="text" ng-model="colorRed"   ng-change="colorFunction()"/></td>
+	    <td><input type="text" ng-model="colorBlue"  ng-change="colorFunction()"/></td>
+	    <td><input type="text" ng-model="colorGreen" ng-change="colorFunction()"/></td>
+		</tr>
+		</table>
+		<pre ng-style="colorStyle">&nbsp</pre>
+	  </div>
+   </body>
+</html>

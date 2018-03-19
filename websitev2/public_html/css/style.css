@@ -1,0 +1,486 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,800,800italic,900,900italic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+.red {
+	
+    color:red;
+	
+}
+	
+.form-area {
+	
+    background-color: white;
+	padding: 10px 10px 10px;
+	margin: 10px 0px 10px;
+	border: 0px solid GREY;
+	
+	}
+
+hr.style2 {
+	border-top: 3px double #8c8b8b;
+}
+   
+ /* myfooter */
+
+.myfooter {
+    padding: 50px 0 20px 0;
+    background-color: black;
+    color: #878c94;
+}
+
+.myfooter .title-widget {
+	text-align: left;
+	color:#fff;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 1;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 0;
+	padding-left: 28px;
+}
+
+.myfooter .title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+.myfooter .social-icon{padding:0px;margin:0px;}
+.myfooter .social-icon a{display:inline-block;color:#fff;font-size:25px;padding:5px;}
+.myfooter .acount-icon a{display:block;color:#fff;font-size:18px;padding:5px;text-decoration:none;}
+.myfooter .acount-icon .fa{margin-right:25px;}
+
+
+.myfooter .category a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 1px;
+    border-radius:4px;
+    margin-top: 6px;
+    background-color: black;
+    border: solid 1px #fff;
+}
+.myfooter ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+
+
+.myfooter .payment{margin:0px;padding:0px;list-style-type:none}
+.myfooter .payment li{list-style-type:none}
+.myfooter .payment li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    float: left;
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+.myfooter ul.social {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+.myfooter ul.social li {
+	display: inline;
+	margin: 0 5px;
+}
+.myfooter .social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+
+.myfooter .social a.icoRss:hover {
+	background-color: #F56505;
+}
+.myfooter .social a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.myfooter .social a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.myfooter .social a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.myfooter .social a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.myfooter .social a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.myfooter .social a.icoRss:hover i, .myfooter .social a.icoFacebook:hover i, .myfooter .social a.icoTwitter:hover i,
+.myfooter .social a.icoGoogle:hover i, .myfooter .social a.icoVimeo:hover i, .myfooter .social a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.myfooter .socialIcon:hover, .myfooter .socialHoverClass {
+	color:#44BCDD;
+}
+
+.myfooter .social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.myfooter .social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.myfooter .social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.myfooter .social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.myfooter-bottom {
+	background: #E3E3E3;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.myfooter-bottom p.pull-left {
+	padding-top: 6px;
+}
+.payments {
+	font-size: 1.5em;	
+}
+/*  zooming class */
+
+
+.zoom:hover {
+     -webkit-transform: scale(1.4);
+     -moz-transform: scale(1.4);
+     -o-transform: scale(1.4);
+ }
+.zoom {
+     -webkit-transform: scale(1);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(1);
+     -o-transform: scale(1);
+     -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+     -o-transition-duration: 0.3s;
+ }
+
+
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+	border-color: black;
+    opacity: .5;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+/* Nav bar styling */
+
+.navbar-custom {
+	background-color: black;
+    color:#ffffff;
+  	border-radius:0;
+    min-height:fixed;
+	opacity: .75;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+  	padding-left:25px;
+  	padding-right:25px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: white;
+	color: black;
+}
+
+      
+.navbar-custom .navbar-brand {
+   color:#eeeeee;
+   padding:20px;
+}
+
+.navbar-custom .navbar-toggle,
+.navbar-custom .nav .open>a, .navbar-custom .nav .open>a:hover, .navbar-custom .nav .open>a:focus {
+   background-color:transparent;
+}
+
+.navbar-custom .icon-bar {
+   border: 1px solid #fff;                
+}
+
+/*-- change navbar dropdown color --*/
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a,.navbar-custom .navbar-nav .open .dropdown-menu {
+    color:#428bca;
+}
+
+/* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Anchor transitions */
+
+a {
+transition: all 0.9s;
+-webkit-transition: all 0.9s;
+-moz-transition: all 0.9s;
+-ms-transition: all 0.9s;
+-o-transition: all 0.9s;
+}
+
+/* Various padding options */
+
+.padding1 {
+padding: 2%;	
+}
+
+.pad {
+	
+margin-top: 80px;	
+
+}
+
+/* Navigation bar title padding */
+
+.title-padding {
+	
+padding-right: 50px;	
+}
+
+/* Bottom of site address section styling */
+
+.address-pad {
+padding: 50px;
+padding-top: 70px;
+margin-bottom: 1px;
+background-color: black;
+opacity: .95;
+color: white;	
+}
+
+.addressdiv{
+background-color: white;
+color: black;	
+}
+
+.post-margin {
+margin-left: 25%;
+}
+
+/* Style for author at bottom of site */
+
+.author {
+	text-align: center; 
+	color: white;
+}
+
+/* hr spacing */
+.spacing {	
+margin-top: 80px;
+
+}
+
+.icon {
+	
+   width: 50%;
+   border-color: black;
+}
+
+.font-s {
+
+  font-family: Montserrat;
+	
+}
+
+.icon-radius {
+	
+	vertical-align:middle;
+	border-radius: 100px;
+}
+
+/* Bootstrap overrides */
+
+.container-fluid {
+padding: 0;	
+}
+
+.col-md-12 {
+padding: 0;
+}
+
+.carousel-indicators li {
+width: 15px;
+height: 15px;
+}

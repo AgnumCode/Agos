@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projects</title>
+
+	<script src="angularProject"></script>
+	<script src="../js/angular.js"></script>
+	<script src="../js/custom.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+	<link href = "../css/appSearch.css" rel="stylesheet" >
+	
+	<script>
+	  
+   </script>	
+  </head>
+  
+  
+ <body ng-app="App" ng-controller="AlphaController" ng-init="getNumbers()">
+ 
+<!-- Nav Bar -->
+		<div class="navbar navbar-custom navbar-fixed-top">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="glyphicon glyphicon-triangle-bottom"></span>
+		  </button>
+		  <h3 class="title-padding">Projects</h3>
+		</div>
+		<div class="collapse navbar-collapse">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="../index.html">Home</a></li>
+			<li class="active"><a href="skills.html">Skills</a></li>
+			<li class="active"><a href="projects.html">Projects</a></li>
+			<li class="active"><a href="https://github.com/AgnumCode/Agos">Github</a></li>
+			<li class="active"><a href="../EA.docx" download>Download Resume (.docx file)</a></li>
+			
+		  </ul>
+		</div><!--/.nav-collapse -->
+	  </div>
+		</div>
+	
+	<hr>
+	<div class="container">
+	 <div class="row pad">
+	  <div class="col-md-5"><h1>Angular JS+Bootstrap practice project.</h1></div>
+	<div class="col-md-12"><small><br>Purpose: Familiarize self with AngularJS using various functionality provided
+									  by the framework. <br>Description: Small program allowing entries of custom table 
+									  elements (filtering only numerics) with clickable table headers that allow ascending/descending sorting as well as simple number searching.</small></div>
+	 </div>
+	</div>
+	<hr>
+	
+	<!-- AngularJS Project 1 -->
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-12">
+			<div class="line">
+			
+			<button ng-click="getNumbers('default')" class="btn btn-default btn-outline btn-sm">Add default row</button>
+			<button ng-click="getNumbers('info')"    class="btn btn-info btn-outline btn-sm">Add info row</button>
+			<button ng-click="getNumbers('warning')" class="btn btn-warning btn-outline btn-sm">Add warning row</button>
+			<button ng-click="getNumbers('success')" class="btn btn-success btn-outline btn-sm">Add success row</button>
+			
+			</div>
+			<br/>
+					
+			<div>
+			 <form>
+			  <div class="form-group">
+			   <div class="input-group input-group-sm col-xs-6">
+			    <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+			    <input ng-model="search" type="text" class="form-control" placeholder="Search here">
+			   </div>      
+			  </div>
+		    </form> 
+		    </div>
+			
+			<div>
+			 <form name="form" ng-submit="form.$valid && providedNumbers(classCreate, numberCreate, deciCreate, negativeCreate)">
+			  <div class="form-group">
+			   <div class="input-group input-group-sm col-xs-6">
+			    <div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
+			    <input ng-model="numberCreate" name="nat" ng-pattern="/^[0-9]{1,}$/" type="number" class="form-control" placeholder="Enter a natural number (0, 1, 2)." required>
+				<span style="margin-left: 5px; color:red" ng-show="form.nat.$error.pattern">Only positive numbers are allowed here!</span><br>
+				<input ng-model="deciCreate"   name="dec" ng-pattern="/^-?\d+\.\d+/"   type="number" class="form-control" placeholder="Enter a decimal number (0.2, 0.34, 0.004)." required>
+				<span style="margin-left: 5px; color:red" ng-show="form.dec.$error.pattern">Only decimal numbers are allowed here!</span><br>
+				<input ng-model="negativeCreate" name="neg" ng-pattern="/^-{1}[1-9]*\d+$/" type="number" class="form-control" placeholder="Enter a negative number (-4, -1, -5)." required>
+				<span style="margin-left: 5px; color:red" ng-show="form.neg.$error.pattern">Only negative whole numbers are allowed here!</span><br>	
+				<input ng-model="classCreate" type="string" class="form-control" placeholder="Enter custom class (ex: btn-link, well, btn-danger, alert-info)">
+				
+				<div class="input-group-addon">
+				  <button ng-disabled="form.$invalid" class="btn btn-outline btn-default" type="submit" >Create Row</button>
+				 </div>
+				</div>
+			   </div> 		   
+			 </div>
+		    </form> 
+		    </div>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th><button ng-click="reverseOrder('number')"   class="btn btn-default btn-block btn-outline btn-sm"> Sort this column </th>
+						<th><button ng-click="reverseOrder('decimal')"  class="btn btn-default btn-block btn-outline btn-sm"> Sort this column</th>
+						<th><button ng-click="reverseOrder('negative')" class="btn btn-default btn-block btn-outline btn-sm"> Sort this column </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-model="tableData" 
+					    ng-repeat="num in records | filter: search | orderBy:sortFor:reverse" 
+						ng-show="!events.length"
+						ng-class="num.colorClass">
+					    <td>{{num.number}}  </td>
+					    <td>{{num.decimal}} </td>
+					    <td>{{num.negative}}</td>
+					</tr>		
+				</tbody>
+			</table>
+		</div>
+	</div>
+   <hr>
+   
+   <div style="text-align:center" class="container">
+    <div class="row pad">
+	  <a style="font-size: 30px" href="http://radford.edu/eagocs/Solar/">Solar System Project</a>
+	  <small>&nbsp &nbsp Created with Javascript, some JQuery, and the <a href="https://threejs.org/">ThreeJS</a> openGL library.</small>
+	  <br>
+	  <br>
+	   <img style="border-radius: 10px" class="icon" src="../pictures/solar.jpg"></img>
+	   <br>
+	   <br>
+	   <p>Note: to regain camera control if lost, click on any white space around frame.</p>
+	 </div>
+	</div>
+	
+	<hr>
+   
+   <div class="container-fluid addressdiv col-md-12 spacing">
+	<address class="address-pad">
+	 <p class="author"> <small>Website by — <em>Eric A.</em></small></p>
+	</address>
+   </div>
+	
+ </body>
+</html>
