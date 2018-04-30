@@ -1,0 +1,15 @@
+Dynamic forum posts stored in JSON
+
+-Created AngularJS template 
+-Used directive to create a 'post' item with all the HTML and styling desired
+-Directive contained references to records.data.posts within JSON stored locally
+ and retrieved in 'myCtrl' using $http.get() and passing the response to the VM
+-ng-repeated over the array of posts[i][post_var1, post_var2, ...] displaying all information accordingly 
+-Used $sce and .trustAsHtml passing in raw html from post[i][..., HTML content, ...]
+ to properly display the raw text as HTML
+-Allowed for direct editing of everything a 'post' item would contain by changing the JSON data file
+-Using XAMPP to test server-side was successful and could display all data successfully
+-Testing revealed the JSON could handle complex HTML but the styling needed to be included 
+-Failure to continue with a database due lack of version access which introduces JSON-mySQL syntax
+-Refactored to use traditional mySQL statements for CRUD operations, abandoning all JSON structure.
+-Now uses PHP to open connection to db and perform CRUD using mySQL statements.

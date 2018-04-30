@@ -1,0 +1,31 @@
+{
+  "posts":[
+    {
+      "postTitle":"The first post?",
+      "postDate":"2018-03-14 15:12:54:00",
+      "postEnd":"The end!",
+      "content":"Nothing too exciting here",
+      "subPostUrl":"http://www.google.com",
+      "subPost":"Hello..",
+      "subPostTitleBody":"and welcome!"
+    },
+    {
+      "postTitle":"The second post?",
+      "postDate":"2018-03-15 15:12:54:00",
+      "postEnd":"Wow, isn't that something? Bye for now.",
+      "content":"Hawking has made major contributions to the field of general relativity. These derive from a deep understanding of what is relevant to physics and astronomy, and especially from a mastery of wholly new mathematical techniques. Following the pioneering work of Penrose he established, partly alone and partly in collaboration with Penrose, a series of successively stronger theorems establishing the fundamental result that all realistic cosmological models must possess singularities. Using similar techniques, Hawking has proved the basic theorems on the laws governing black holes: that stationary solutions of Einstein's equations with smooth event horizons must necessarily be axisymmetric; and that in the evolution and interaction of black holes, the total surface area of the event horizons must increase. In collaboration with G. Ellis, Hawking is the author of an impressive and original treatise on 'Space-time in the Large'.",
+      "subPostUrl":"https://en.wikipedia.org/wiki/Stephen_Hawking",
+      "subPost":"Stephen Hawking",
+      "subPostTitleBody":", a brief mention of one of his contributions."
+    },
+	{ 
+      "postTitle":"Trying JSON html content.",
+      "postDate":"2018-03-16 15:12:54:00",
+      "postEnd":"Patience is a virtue it seems!",
+      "content": "<figure class=snip1580><img alt=profile-sample2 src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample106.jpg><figcaption><h3>Me</h3><h5>UX Design</h5></figcaption><a href=#na></a></figure><figure class=snip1580><img alt=profile-sample7 src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample116.jpg><figcaption><h3>Myself</h3><h5>Sound &amp; Vision</h5></figcaption><a href=#na></a></figure><figure class=snip1580><img alt=profile-sample6 src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample117.jpg><figcaption><h3>I</h3><h5>Web Development</h5></figcaption><a href=#na></a></figure>",
+      "subPostUrl":"https://www.reddit.com/r/learnprogramming/",
+      "subPost":"Reddit",
+      "subPostTitleBody":"has a great forum for learning programming. If you didn't know."
+	}
+  ]
+}
