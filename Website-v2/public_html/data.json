@@ -1,0 +1,34 @@
+{
+  "posts":[
+    {
+      "id":"1",
+      "postTitle":"The first post?",
+      "postDate":"2018-03-14 15:12:54:00",
+      "postEnd":"The end!",
+      "content":"Nothing too exciting here",
+      "subPostUrl":"http://www.google.com",
+      "subPost":"Hello..",
+      "subPostTitleBody":"and welcome!"
+    },
+    {
+      "id":"2",
+      "postTitle":"The second post?",
+      "postDate":"2018-03-15 15:12:54:00",
+      "postEnd":"Later!",
+      "content":"You've done great work, rest in peace!",
+      "subPostUrl":"https://en.wikipedia.org/wiki/Stephen_Hawking",
+      "subPost":"Stephen Hawking",
+      "subPostTitleBody":" a tribute!"
+    },
+	{ 
+	  "id":"3",
+      "postTitle":"An incredibly testing post.",
+      "postDate":"2018-03-16 15:12:54:00",
+      "postEnd":"Patience is a virtue.",
+      "content": "<div class='well'>This is a test post that will test templated JSON HTML! Thanks Angular!</div>",
+      "subPostUrl":"http://www.reddit.com/programming",
+      "subPost":"Reddit",
+      "subPostTitleBody":"has a great forum for learning!"
+	}
+  ]
+}
